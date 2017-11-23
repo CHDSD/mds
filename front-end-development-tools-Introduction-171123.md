@@ -43,7 +43,7 @@ postman以前是作为chrome浏览器的扩展插件，最近单独发布成脱�
 
 上图的示例中，访问index.html时，表单提交到login接口后，经过两次302重定向，跳转到main.html了，在开发者工具的network中来不及查看login的响应，在fiddler中可以查看。fiddler还可以设置filter让你只看某个域名下的请求，调试的时候避免其他不相关请求的的干扰。关于fiddler查看移动端设备请求的方法，网上有很多教程，在这里就不细说了。
 
-### webpack
+### 4.webpack
 
 在前端打包之前的时代，一个复杂的页面中可能引入几十个js和css文件。很多浏览器每个域名的最大并发请求数量只有6个，页面资源排队加载会页面打开时间长。
 由于并发请求数量受限，随着前端项目的越来越复杂，前端工程师开始将css，js文件合并在一起。前端构建工具应运而生，其中的代表有grunt和gulp。grunt和gulp为提供了合并，压缩，编译less/sass，复制，打包等一系列任务。
@@ -236,12 +236,12 @@ __WEBPACK_IMPORTED_MODULE_0__moduleA__["a" /* default */].dosomething(thing);
 ```
 
 
-### nodejs
+### 5.nodejs
 
 打开新世界的大门。nodej是一个javascript运行时，nodejs使得js可以脱离浏览器运行。借助nodejs，你可以随时运行一个js文件，可以操纵硬盘中的内容，可以发送网络请求。上面的grunt，gulp和webpack以及它们的各种插件，都依赖于nodejs运行。通过npm可以获取各种各样的包来帮助完成任务，还可以自己写一些工具发布到npm供别人使用。
 
 
-### 其他
+### 6.其他
 
 markman UI图测量尺寸，取色
 
